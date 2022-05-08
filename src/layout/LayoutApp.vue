@@ -17,6 +17,7 @@
 }
 .el-header{
   padding: 0;
+  border: 0;
   background-color:  #2e3759;
   color: #333;
 }

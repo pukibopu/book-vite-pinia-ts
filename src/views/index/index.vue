@@ -1,7 +1,7 @@
 <template>
     <div class="common-layout">
       <el-container>
-        <el-aside><CategoryMenu/></el-aside>
+        <el-aside width="150px"><CategoryMenu/></el-aside>
         <el-main>
             <el-row>
             <el-col><SearchInput/></el-col>
@@ -9,7 +9,6 @@
           </el-row>
         </el-main>
       </el-container>
-
   </div>
 </template>
 
@@ -24,10 +23,10 @@ import CategoryMenu from './components/CategoryMenu.vue'
   padding: 0px;
 }
 .el-col {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .el-row {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .el-aside {
   margin: 0;
