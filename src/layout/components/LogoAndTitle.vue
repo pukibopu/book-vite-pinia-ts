@@ -3,7 +3,7 @@
         <el-col :span="12">
              <img src="@/assets/logo.png" width="60">
         </el-col>
-         <el-col :span="12"><h1>TEST自助图书馆</h1></el-col>
+         <el-col :span="12"><h2>TEST自助图书馆</h2></el-col>
     </el-row>
 </template>
 <script lang="ts" setup>

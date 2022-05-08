@@ -34,4 +34,7 @@ import CategoryMenu from './components/CategoryMenu.vue'
   padding: 0;
   background-color:  #2e3759;
 }
+.el-container {
+  height: 100vh;
+}
 </style>

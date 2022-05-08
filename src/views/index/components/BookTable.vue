@@ -11,11 +11,14 @@
 import book from '@/api/types/book'
 import { useBookList } from '@/store/bookList'
 import request from '@/utils/request'
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, watch } from 'vue'
 
 const border:boolean = false
 const bookList = ref()
 const store = useBookList()
+watch(store, (newVal, odlVal) => {
+  bookList.value = store.bookList
+})
 onMounted(() => {
   request({
     method: 'get',
@@ -23,7 +26,6 @@ onMounted(() => {
   }).then((response: { data: book[]; }) => {
     store.cate(response.data)
   })
-  bookList.value = store.bookList
 })
 
 </script>
