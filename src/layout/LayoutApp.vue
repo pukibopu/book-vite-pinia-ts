@@ -7,10 +7,7 @@
           <el-col :span="12"><AppMenu/></el-col>
         </el-row>
         </el-header>
-        <el-container>
-        <el-aside width="200px"><CategoryMenu/></el-aside>
         <el-main><router-view></router-view></el-main>
-      </el-container>
     </el-container>
   </div>
 </template>
@@ -44,5 +41,4 @@
 <script setup lang="ts">
 import LogoAndTitle from './components/LogoAndTitle.vue'
 import AppMenu from './components/AppMenu.vue'
-import CategoryMenu from './components/CategoryMenu.vue'
 </script>

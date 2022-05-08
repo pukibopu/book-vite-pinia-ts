@@ -7,9 +7,8 @@
     text-color="#fff"
     v-for="(value, key) in cates"
     :key="key"
-     router
       >
-        <el-menu-item index="#1">
+        <el-menu-item index="" @click="updatecateInfo(key+1)">
           <el-icon><icon-menu /></el-icon>
           <span>{{value.name}}</span>
         </el-menu-item>
@@ -22,7 +21,9 @@ import {
 import request from '@/utils/request'
 import { onMounted, ref } from 'vue'
 import { Category } from '@/api/types/category'
+import { useBookList } from '@/store/bookList'
 const cates = ref < Category[] >([])
+const store = useBookList()
 onMounted(() => {
   request({
     method: 'get',
@@ -31,7 +32,14 @@ onMounted(() => {
     cates.value = response.data
   })
 })
-
+const updatecateInfo = (index: any) => {
+  request({
+    method: 'get',
+    url: '/api/index/book-cate?cid=' + index
+  }).then((response) => {
+    store.cate(response.data)
+  })
+}
 </script>
 <style lang="scss" scoped>
 
