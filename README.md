@@ -2,6 +2,11 @@
 ## clone项目
 ```shell
 git clone https://github.com/pukibopu/book-vite-pinia-ts.git
+cd book-vite-pinia-ts
+```
+## install
+```bash
+npm intall
 ```
 ## 显示效果
 ```bash

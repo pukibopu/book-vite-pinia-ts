@@ -12,6 +12,11 @@ const route:RouteRecordRaw[] = [
         component: Index
       }
     ]
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import('@/views/login/index.vue')
   }
 ]
 const router = createRouter({
