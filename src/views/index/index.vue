@@ -1,8 +1,8 @@
 <template>
     <div class="common-layout">
-      <el-container>
-        <el-aside width="150px"><CategoryMenu/></el-aside>
-        <el-main>
+      <el-container class="h-screen">
+        <el-aside width="150px" class="bg-blue-500"><CategoryMenu/></el-aside>
+        <el-main class="bg-gray-100">
             <el-row>
             <el-col><SearchInput/></el-col>
             <el-col><BookTable></BookTable></el-col>
@@ -31,9 +31,6 @@ import CategoryMenu from './components/CategoryMenu.vue'
 .el-aside {
   margin: 0;
   padding: 0;
-  background-color:  #2e3759;
 }
-.el-container {
-  height: 100vh;
-}
+
 </style>

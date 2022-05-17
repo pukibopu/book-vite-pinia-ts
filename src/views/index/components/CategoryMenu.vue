@@ -3,8 +3,8 @@
 
         default-active="2"
         class="el-menu-vertical-demo"
-        background-color="#2e3759"
-    active-text-color="#fff"
+        background-color="#3b82f6"
+    active-text-color="#eff6ff"
     text-color="#fff"
     v-for="(value, key) in cates"
     :key="key"

@@ -1,9 +1,9 @@
 <template>
     <el-row>
-        <el-col :span="3">
-             <img src="@/assets/logo.png" width="60">
+        <el-col :span="3" class="bg-blue-500">
+             <img src="@/assets/logo.png" width="60" class="flex-auto bg-blue-500">
         </el-col>
-         <el-col :span="21"><span id="title">SSLS图书自助</span></el-col>
+         <el-col :span="21" class="flex-auto bg-blue-500"><span id="title" class="bg-blue-500">SSLS图书自助</span></el-col>
     </el-row>
 </template>
 <script lang="ts" setup>
