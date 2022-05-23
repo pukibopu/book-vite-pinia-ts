@@ -1,5 +1,5 @@
 <template>
-  <el-table  :data="bookList" :border="border" style="width: 200%" max-height="420">
+  <el-table  :data="bookList" :border="border" style="width: 200%" max-height="550">
     <el-table-column prop="name" label="书名" width="200" />
     <el-table-column prop="authors" label="作者" width="200" />
     <el-table-column prop="publishData" label="时间" width="200"/>

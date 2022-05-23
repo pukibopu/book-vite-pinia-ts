@@ -1,6 +1,6 @@
 <template>
     <div class="common-layout">
-      <el-container class="h-screen">
+      <el-container>
         <el-aside width="150px" class="bg-blue-500"><CategoryMenu/></el-aside>
         <el-main class="bg-gray-100">
             <el-row>
@@ -32,5 +32,7 @@ import CategoryMenu from './components/CategoryMenu.vue'
   margin: 0;
   padding: 0;
 }
-
+.el-container {
+  height: 784px;
+}
 </style>
